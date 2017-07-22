@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Laitis.Contracts/obj/Debug
+/LaitisIntegration/.vs/LaitisIntegration/v15
+*.suo
+/LaitisIntegration/LaitisIntegration.sln.DotSettings.user
