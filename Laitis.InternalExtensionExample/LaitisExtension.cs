@@ -14,7 +14,7 @@ namespace Laitis.InternalExtensionExample //Namespace should be equal to DLL fil
     /// Costura.Fody reference to get one extension dll after compilation
     /// 
     /// 
-    /// After compile in release configuration with Costura.Fody place file into AppData/Local/Laitis/Extensions
+    /// After compile in release configuration with Costura.Fody copy result DLL file into AppData/Local/Laitis/Extensions
     /// </summary>
     public static class LaitisExtension // Main Class should be named LaitisExtension
     {

@@ -52,6 +52,8 @@
     <Compile Include="ExtensionForm.designer.cs">
       <DependentUpon>ExtensionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LaitisCommunicator.cs" />
+    <Compile Include="LaitisExternalExtensionActions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ExtensionForm.resx">

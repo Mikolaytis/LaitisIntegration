@@ -1,5 +1,8 @@
 ﻿namespace Laitis.ExternalExtensionExample
 {
+    /// <summary>
+    /// Just a designer generated code that creates Window Form with two buttons.
+    /// </summary>
     partial class ExtensionForm
     {
         /// <summary>

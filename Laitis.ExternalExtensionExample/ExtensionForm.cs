@@ -1,13 +1,14 @@
 ﻿using System;
-using System.IO;
-using System.IO.Pipes;
 using System.Windows.Forms;
-using Laitis.Contracts;
-using Laitis.Contracts.Enums;
-using Newtonsoft.Json;
 
 namespace Laitis.ExternalExtensionExample
 {
+    /// <summary>
+    /// Just an UI that have two buttons with click handlers that invoke send operation.
+    /// Send operation sends requests to laitis using static class LaitisExternalExtensionActions
+    /// Classes are separated because your extension can be created without UI.
+    /// <seealso cref="LaitisExternalExtensionActions"/>
+    /// </summary>
     public partial class ExtensionForm : Form
     {
         public ExtensionForm()
@@ -17,41 +18,12 @@ namespace Laitis.ExternalExtensionExample
 
         private void OnSendHelloClick(object sender, EventArgs e)
         {
-            var request = JsonConvert.SerializeObject(new ApiRequest
-            {
-                R = ApiRequestType.SendVoiceCommand,
-                P = "Привет"
-            });
-            SendApiRequestToLaitis(request);
+            LaitisExternalExtensionActions.SendHelloVoiceCommand();
         }
 
         private void OnSendActionButtonClick(object sender, EventArgs e)
         {
-            var request = JsonConvert.SerializeObject(new ApiRequest
-            {
-                R = ApiRequestType.SendActions,
-                A = new[]
-                {
-                    new CommandAction
-                    {
-                        T = ActionType.Say,
-                        P = new [] { "Действие" }
-                    }
-                }
-            });
-            SendApiRequestToLaitis(request);
-        }
-
-        private void SendApiRequestToLaitis(string request)
-        {
-            using (var client = new NamedPipeClientStream("LaitisPublicApiService"))
-            {
-                client.Connect();
-                using (var writer = new StreamWriter(client))
-                {
-                    writer.WriteLine(request);
-                }
-            }
+            LaitisExternalExtensionActions.SendSayInfoAction();
         }
     }
 }
