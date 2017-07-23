@@ -19,8 +19,8 @@ namespace Laitis.ExternalExtensionExample
         {
             var request = JsonConvert.SerializeObject(new ApiRequest
             {
-                ApiRequestType = ApiRequestType.SendVoiceCommand,
-                Parameter = "Привет"
+                R = ApiRequestType.SendVoiceCommand,
+                P = "Привет"
             });
             SendApiRequestToLaitis(request);
         }
@@ -29,13 +29,13 @@ namespace Laitis.ExternalExtensionExample
         {
             var request = JsonConvert.SerializeObject(new ApiRequest
             {
-                ApiRequestType = ApiRequestType.SendActions,
-                Actions = new[]
+                R = ApiRequestType.SendActions,
+                A = new[]
                 {
                     new CommandAction
                     {
-                        Type = ActionType.Say,
-                        Parameters = new [] { "Действие" }
+                        T = ActionType.Say,
+                        P = new [] { "Действие" }
                     }
                 }
             });

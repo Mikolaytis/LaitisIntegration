@@ -1,20 +1,54 @@
 ﻿using System;
 using System.Threading;
 using Laitis.Contracts;
+using Laitis.Contracts.Enums;
 
-namespace Laitis.InternalExtensionExample
+namespace Laitis.InternalExtensionExample //Namespace should be equal to DLL file name without extension
 {
-    public static class LaitisExtension
+    /// <summary>
+    /// Laitis Internal Extension
+    /// 
+    /// Requirements:
+    /// .Net Framework 4.5
+    /// Laitis.Contracts project reference
+    /// Costura.Fody reference to get one extension dll after compilation
+    /// 
+    /// 
+    /// After compile in release configuration with Costura.Fody place file into AppData/Local/Laitis/Extensions
+    /// </summary>
+    public static class LaitisExtension // Main Class should be named LaitisExtension
     {
-        public static void Run(
-            Action<object> sendApiRequestAction)
+        /// <summary>
+        /// Main function of extension like main() in any other program
+        /// </summary>
+        /// <param name="sendApiRequestAction">Invoke that action to send requests to laitis from your extension</param>
+        public static void Run(Action<object> sendApiRequestAction)
         {
+            //Send Hello string like it was said by a human into microphone
             sendApiRequestAction(new ApiRequest
             {
-                ApiRequestType = ApiRequestType.SendVoiceCommand,
-                Parameter = "Привет"
+                R/*equest*/ = ApiRequestType.SendVoiceCommand,
+                P/*arameter*/ = "Привет"
             });
-            Thread.Sleep(20000);
+            
+            Thread.Sleep(2000);
+
+            //Send Action to Laitis to pronounce extension information
+            sendApiRequestAction(new ApiRequest
+            {
+                R/*equest*/ = ApiRequestType.SendActions,
+                A/*ctions*/ = new[]
+                {
+                    new CommandAction
+                    {
+                        T/*ype*/ = ActionType.Say,
+                        P/*arameters*/ = new []
+                        {
+                            "Это тестовое ресширение"
+                        }
+                    }
+                }
+            });
         }
     }
 }
