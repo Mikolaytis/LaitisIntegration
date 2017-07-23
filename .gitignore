@@ -6,3 +6,11 @@
 /LaitisIntegration/.vs/LaitisIntegration/v15
 *.suo
 /LaitisIntegration/LaitisIntegration.sln.DotSettings.user
+/LaitisIntegration.sln.DotSettings.user
+/Laitis.Contracts/bin/Debug
+/Laitis.ExternalExtensionExample/obj/Debug
+/Laitis.InternalExtensionExample/bin/Debug
+/Laitis.InternalExtensionExample/obj/Debug
+/packages
+/Laitis.Contracts/Laitis.Contracts.csproj.user
+/Laitis.ExternalExtensionExample/bin/Debug

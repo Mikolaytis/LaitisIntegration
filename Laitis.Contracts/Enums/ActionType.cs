@@ -1,11 +1,13 @@
 ﻿namespace Laitis.Contracts.Enums
 {
     /// <summary>
-    /// Used to identify action type and it's parameters
+    /// Used to identify action type and it's parameters of CommandAction
     /// 
     /// Note: 
     /// all enums should be converted to int, after int to string
     /// all other parameters should be converted to string
+    /// 
+    /// <seealso cref="CommandAction"/>
     /// </summary>
     public enum ActionType
     {

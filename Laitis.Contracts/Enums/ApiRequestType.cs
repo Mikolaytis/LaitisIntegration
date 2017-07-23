@@ -3,7 +3,7 @@
     /// <summary>
     /// Api request type for Api Request
     /// </summary>
-    internal enum ApiRequestType
+    public enum ApiRequestType
     {
         /// <summary>
         /// Send voice command to Laitis like it was sayed by a human into microphone

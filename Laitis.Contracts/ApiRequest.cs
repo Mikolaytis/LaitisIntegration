@@ -6,7 +6,7 @@ namespace Laitis.Contracts
     /// Contract that describes Request to Laitis application
     /// </summary>
     [DataContract]
-    internal class ApiRequest
+    public class ApiRequest
     {
         /// <summary>
         /// Type of Api Request
