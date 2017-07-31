@@ -263,6 +263,14 @@
         /// 
         /// No Parameters
         /// </summary>
-        EndIf = 27
+        EndIf = 27,
+
+        /// <summary>
+        /// Just text comment. Do nothing.
+        /// 
+        /// Parameters:
+        /// 1. (string) Comment
+        /// </summary>
+        Comment = 28
     }
 }
