@@ -1,4 +1,4 @@
-﻿namespace Laitis.Contracts
+﻿namespace Laitis.Contracts.Enums
 {
     /// <summary>
     /// Api request type for Api Request

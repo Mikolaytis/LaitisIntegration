@@ -40,7 +40,8 @@
     <Compile Include="Enums\ActionType.cs" />
     <Compile Include="Enums\ButtonAction.cs" />
     <Compile Include="Enums\CloseAppBehaviour.cs" />
-    <Compile Include="Enums\MouseMoveKind.cs" />
+    <Compile Include="Enums\MouseMoveType.cs" />
+    <Compile Include="Enums\MouseScrollType.cs" />
     <Compile Include="Enums\ShowWindowCommandType.cs" />
     <Compile Include="Enums\VariableOperator.cs" />
     <Compile Include="Enums\WebPageNavigateAction.cs" />

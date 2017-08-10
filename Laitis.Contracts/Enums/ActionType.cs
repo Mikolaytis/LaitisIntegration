@@ -1,7 +1,9 @@
-﻿namespace Laitis.Contracts.Enums
+﻿using Laitis.Contracts;
+
+namespace Laitis.Contracts.Enums
 {
     /// <summary>
-    /// Used to identify action type and it's parameters of CommandAction
+    /// Used to identify action type and it's parameters
     /// 
     /// Note: 
     /// all enums should be converted to int, after int to string
@@ -46,9 +48,9 @@
         /// Parameters:
         /// 1. (int) X
         /// 2. (int) Y
-        /// 3. (MouseMoveKind enum) Mouse Move Kind
+        /// 3. (MouseMoveType enum) Mouse Move Type (point/relative)
         /// 
-        /// <seealso cref="MouseMoveKind"/>
+        /// <seealso cref="MouseMoveType"/>
         /// </summary>
         MouseMove = 3,
 
@@ -271,6 +273,17 @@
         /// Parameters:
         /// 1. (string) Comment
         /// </summary>
-        Comment = 28
+        Comment = 28,
+
+        /// <summary>
+        /// Emulate Mouse Scroll
+        /// 
+        /// Parameters:
+        /// 1. (MouseScrollType) Mouse Scroll Type (Vertical or Horizontal)
+        /// 2. (int) Mouse Scroll Value (positive/negative value)
+        /// 
+        /// <seealso cref="MouseScrollType"/>
+        /// </summary>
+        MouseScroll = 29
     }
 }

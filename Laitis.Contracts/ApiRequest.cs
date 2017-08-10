@@ -1,4 +1,6 @@
-﻿namespace Laitis.Contracts
+﻿using Laitis.Contracts.Enums;
+
+namespace Laitis.Contracts
 {
     /// <summary>
     /// Contract that describes Request to Laitis application

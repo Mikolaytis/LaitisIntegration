@@ -1,10 +1,10 @@
 ﻿namespace Laitis.Contracts.Enums
 {
     /// <summary>
-    /// Mouse move kind for Mouse Move Action
+    /// Mouse move type for Mouse Move Action
     /// <seealso cref="ActionType.MouseMove"/>
     /// </summary>
-    public enum MouseMoveKind
+    public enum MouseMoveType
     {
         /// <summary>
         /// Move mouse to point on screen
