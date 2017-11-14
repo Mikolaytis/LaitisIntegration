@@ -292,6 +292,6 @@ namespace Laitis.Contracts.Enums
         /// Parameters:
         /// 1. (string) Pack name (leave empty "" to toggle all packs)
         /// </summary>
-        TogglePackEnabled = 30
+        TogglePackActivity = 30
     }
 }
