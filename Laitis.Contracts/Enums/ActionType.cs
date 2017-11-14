@@ -284,6 +284,14 @@ namespace Laitis.Contracts.Enums
         /// 
         /// <seealso cref="MouseScrollType"/>
         /// </summary>
-        MouseScroll = 29
+        MouseScroll = 29,
+
+        /// <summary>
+        /// Toggle user pack enabled/disabled
+        /// 
+        /// Parameters:
+        /// 1. (string) Pack name (leave empty "" to toggle all packs)
+        /// </summary>
+        TogglePackEnabled = 30
     }
 }

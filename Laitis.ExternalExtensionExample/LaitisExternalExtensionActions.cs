@@ -18,7 +18,7 @@ namespace Laitis.ExternalExtensionExample
             new LaitisCommunicator().SendRequest(new ApiRequest
             {
                 R/*equest*/ = ApiRequestType.SendVoiceCommand,
-                P/*arameter*/ = "Привет"
+                P/*arameter*/ = "Hello"
             });
         }
 
@@ -37,7 +37,7 @@ namespace Laitis.ExternalExtensionExample
                         T/*ype*/ = ActionType.Say,
                         P/*arameters*/ = new []
                         {
-                            "Это тестовое ресширение"
+                            "This is message from external extension"
                         }
                     }
                 }

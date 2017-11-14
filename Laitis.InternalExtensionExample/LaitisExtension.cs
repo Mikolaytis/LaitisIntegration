@@ -28,7 +28,7 @@ namespace Laitis.InternalExtensionExample //Namespace should be equal to DLL fil
             sendApiRequestAction(new ApiRequest
             {
                 R/*equest*/ = ApiRequestType.SendVoiceCommand,
-                P/*arameter*/ = "Привет"
+                P/*arameter*/ = "Hello"
             });
             
             Thread.Sleep(2000);
@@ -44,7 +44,7 @@ namespace Laitis.InternalExtensionExample //Namespace should be equal to DLL fil
                         T/*ype*/ = ActionType.Say,
                         P/*arameters*/ = new []
                         {
-                            "Это тестовое ресширение"
+                            "This is message from internal extension"
                         }
                     }
                 }
