@@ -279,7 +279,7 @@ namespace Laitis.Contracts.Enums
         /// Emulate Mouse Scroll
         /// 
         /// Parameters:
-        /// 1. (MouseScrollType) Mouse Scroll Type (Vertical or Horizontal)
+        /// 1. (MouseScrollType enum) Mouse Scroll Type (Vertical or Horizontal)
         /// 2. (int) Mouse Scroll Value (positive/negative value)
         /// 
         /// <seealso cref="MouseScrollType"/>
@@ -291,7 +291,20 @@ namespace Laitis.Contracts.Enums
         /// 
         /// Parameters:
         /// 1. (string) Pack name (leave empty "" to toggle all packs)
+        /// 2. (StateSwitchingAction enum) Enable or Disable or Toggle (Toggle is default)
+        /// 
+        /// <seealso cref="StateSwitchingAction"/>
         /// </summary>
-        TogglePackActivity = 30
+        TogglePackActivity = 30,
+
+        /// <summary>
+        /// Allow to execute random Action from random actions block.
+        /// Only one action will be executed from the block.
+        /// Block can be closed by End action.
+        /// Random action will be picked from actions that can be executed.
+        /// 
+        /// No Parameters
+        /// </summary>
+        RandomActionBlock = 31
     }
 }

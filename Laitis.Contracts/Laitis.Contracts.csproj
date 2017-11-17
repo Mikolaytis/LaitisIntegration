@@ -43,6 +43,7 @@
     <Compile Include="Enums\MouseMoveType.cs" />
     <Compile Include="Enums\MouseScrollType.cs" />
     <Compile Include="Enums\ShowWindowCommandType.cs" />
+    <Compile Include="Enums\StateSwitchingAction.cs" />
     <Compile Include="Enums\VariableOperator.cs" />
     <Compile Include="Enums\WebPageNavigateAction.cs" />
     <Compile Include="Enums\HttpWebRequestMethod.cs" />
