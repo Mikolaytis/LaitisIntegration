@@ -305,6 +305,13 @@ namespace Laitis.Contracts.Enums
         /// 
         /// No Parameters
         /// </summary>
-        RandomActionBlock = 31
+        RandomActionBlock = 31,
+
+        /// <summary>
+        /// Allow to execute actions from block multiple times.
+        /// 
+        /// 1. (int) Count
+        /// </summary>
+        Loop = 32
     }
 }
