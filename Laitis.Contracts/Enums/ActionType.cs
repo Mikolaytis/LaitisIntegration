@@ -149,13 +149,17 @@ namespace Laitis.Contracts.Enums
         HttpWebRequest = 14,
 
         /// <summary>
-        /// Set User Variable
+        /// Set User Variable. 
         /// 
         /// Parameters:
         /// 1. (string) Variable Name
-        /// 2. (string) Variable Value
+        /// 2. (int, double, string) Variable Value
+        /// 3. (ArithmeticOperation enum) Operator (can be empty if you need to just set specific value)
+        /// 4. (int, double, string) Operand value (can be empty if Operator is empty)
+        /// 
+        /// <seealso cref="ArithmeticOperation"/>
         /// </summary>
-        SetUserVariable = 15,
+        SetVariableValue = 15,
 
         /// <summary>
         /// Perform next action if condition is satisfied.
@@ -261,11 +265,11 @@ namespace Laitis.Contracts.Enums
         Else = 26,
 
         /// <summary>
-        /// EndIf condition part
+        /// EndBlock condition part
         /// 
         /// No Parameters
         /// </summary>
-        EndIf = 27,
+        EndBlock = 27,
 
         /// <summary>
         /// Just text comment. Do nothing.
@@ -312,6 +316,51 @@ namespace Laitis.Contracts.Enums
         /// 
         /// 1. (int) Count
         /// </summary>
-        Loop = 32
+        Loop = 32,
+
+        /// <summary>
+        /// Begin mouse move interaction like jet aim.
+        /// 
+        /// No Parameters
+        /// </summary>
+        JetAim = 33,
+        
+        /// <summary>
+        /// Run .bat script
+        /// 
+        /// Parameters:
+        /// 1. (string) Script
+        /// </summary>
+        BatchScript = 34,
+        
+        /// <summary>
+        /// Replace variable value if it's value equals to specific value
+        /// 
+        /// Parameters:
+        /// 1. (string) Variable name
+        /// 2. (string) from
+        /// 3. (string) to
+        /// </summary>
+        VariableReplace = 35,
+
+        /// <summary>
+        /// Wait for next voice command and write it's value into variable
+        /// 
+        /// Parameters:
+        /// 1. (string) Variable name
+        /// </summary>
+        WaitNextCommand = 36,
+
+        /// <summary>
+        /// Add event to the schedule
+        /// All actions below schedule event will execute when schedule event occur
+        /// 
+        /// Parameters:
+        /// 1. (ScheduleEventType enum) Event Type
+        /// 2. (string) Date/TimeSpan
+        /// 
+        /// <seealso cref="ScheduleEventType"/>
+        /// </summary>
+        ScheduleEvent = 37
     }
 }

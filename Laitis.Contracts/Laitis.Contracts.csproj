@@ -38,10 +38,12 @@
     <Compile Include="ApiRequest.cs" />
     <Compile Include="CommandAction.cs" />
     <Compile Include="Enums\ActionType.cs" />
+    <Compile Include="Enums\ArithmeticOperation.cs" />
     <Compile Include="Enums\ButtonAction.cs" />
     <Compile Include="Enums\CloseAppBehaviour.cs" />
     <Compile Include="Enums\MouseMoveType.cs" />
     <Compile Include="Enums\MouseScrollType.cs" />
+    <Compile Include="Enums\ScheduleEventType.cs" />
     <Compile Include="Enums\ShowWindowCommandType.cs" />
     <Compile Include="Enums\StateSwitchingAction.cs" />
     <Compile Include="Enums\VariableOperator.cs" />
