@@ -321,7 +321,8 @@ namespace Laitis.Contracts.Enums
         /// <summary>
         /// Begin mouse move interaction like jet aim.
         /// 
-        /// No Parameters
+        /// Parameters:
+        /// 1. (string) Predefined digits (can be empty)
         /// </summary>
         JetAim = 33,
         
