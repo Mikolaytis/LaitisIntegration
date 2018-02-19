@@ -1,5 +1,10 @@
 ﻿namespace Laitis.Contracts.Enums
 {
+    /// <summary>
+    /// Used for Laitis SetVariableValue Actions
+    /// 
+    /// <seealso cref="ActionType.SetVariableValue"/>
+    /// </summary>
     public enum ArithmeticOperation
     {
         /// <summary>
@@ -61,5 +66,10 @@
         /// Round
         /// </summary>
         Round = 11,
+        
+        /// <summary>
+        /// Random
+        /// </summary>
+        Rand = 12,
     }
 }

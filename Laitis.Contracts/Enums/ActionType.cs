@@ -63,7 +63,7 @@ namespace Laitis.Contracts.Enums
         Say = 4,
 
         /// <summary>
-        /// Type some text.
+        /// Type/Paste some text.
         /// 
         /// Parameters:
         /// 1. (string) String to type
@@ -99,6 +99,9 @@ namespace Laitis.Contracts.Enums
         /// 
         /// Parameters:
         /// 1. (int) Milliseconds to wait
+        /// 2. (PauseType enum) Pause Type
+        /// 
+        /// <seealso cref="PauseType"/>
         /// </summary>
         Pause = 9,
 
@@ -321,10 +324,11 @@ namespace Laitis.Contracts.Enums
         /// <summary>
         /// Begin mouse move interaction like jet aim.
         /// 
-        /// No Parameters
+        /// Parameters:
+        /// 1. (string) Predefined digits (can be empty)
         /// </summary>
         JetAim = 33,
-        
+
         /// <summary>
         /// Run .bat script
         /// 
@@ -332,7 +336,7 @@ namespace Laitis.Contracts.Enums
         /// 1. (string) Script
         /// </summary>
         BatchScript = 34,
-        
+
         /// <summary>
         /// Replace variable value if it's value equals to specific value
         /// 
@@ -348,6 +352,7 @@ namespace Laitis.Contracts.Enums
         /// 
         /// Parameters:
         /// 1. (string) Variable name
+        /// 2. (int) Time to wait(in milliseconds, blank or 0 - infinite)
         /// </summary>
         WaitNextCommand = 36,
 
@@ -361,6 +366,27 @@ namespace Laitis.Contracts.Enums
         /// 
         /// <seealso cref="ScheduleEventType"/>
         /// </summary>
-        ScheduleEvent = 37
+        ScheduleEvent = 37,
+        
+        /// <summary>
+        /// Add event to the schedule
+        /// All actions below schedule event will execute when schedule event occur
+        /// 
+        /// Parameters:
+        /// 1. (NotificationType enum) Notification Type
+        /// 2. (string) Text
+        /// 3. (int) Duration (in seconds)
+        /// 
+        /// <seealso cref="NotificationType"/>
+        /// </summary>
+        Notify = 38,
+
+        /// <summary>
+        /// Execute voice command like it was said by user
+        /// 
+        /// Parameters:
+        /// 1. (string) Voice Command
+        /// </summary>
+        VoiceCommand = 39,
     }
 }

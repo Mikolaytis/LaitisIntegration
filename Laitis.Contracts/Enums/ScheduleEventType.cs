@@ -2,6 +2,7 @@
 {
     /// <summary>
     /// Type of ScheduleEvent
+    /// <seealso cref="ActionType.ScheduleEvent"/>
     /// </summary>
     public enum ScheduleEventType
     {

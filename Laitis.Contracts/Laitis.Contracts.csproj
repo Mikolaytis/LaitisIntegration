@@ -43,6 +43,8 @@
     <Compile Include="Enums\CloseAppBehaviour.cs" />
     <Compile Include="Enums\MouseMoveType.cs" />
     <Compile Include="Enums\MouseScrollType.cs" />
+    <Compile Include="Enums\NotificationType.cs" />
+    <Compile Include="Enums\PauseType.cs" />
     <Compile Include="Enums\ScheduleEventType.cs" />
     <Compile Include="Enums\ShowWindowCommandType.cs" />
     <Compile Include="Enums\StateSwitchingAction.cs" />
