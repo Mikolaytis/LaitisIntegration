@@ -23,7 +23,7 @@ namespace Laitis.Contracts
         public CommandAction[] A { get; set; }
 
         /// <summary>
-        /// string parameter for ApiRequestType.SendVoiceCommand
+        /// string parameter for ApiRequestType.SendPhrase
         /// Leave it null for other api request types
         /// </summary>
         public string P { get; set; }

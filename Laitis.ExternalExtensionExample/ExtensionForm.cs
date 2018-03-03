@@ -18,7 +18,7 @@ namespace Laitis.ExternalExtensionExample
 
         private void OnSendHelloClick(object sender, EventArgs e)
         {
-            LaitisExternalExtensionActions.SendHelloVoiceCommand();
+            LaitisExternalExtensionActions.SendHelloPhrase();
         }
 
         private void OnSendActionButtonClick(object sender, EventArgs e)

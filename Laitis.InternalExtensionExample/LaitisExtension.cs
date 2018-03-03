@@ -27,7 +27,7 @@ namespace Laitis.InternalExtensionExample //Namespace should be equal to DLL fil
             //Send Hello string like it was said by a human into microphone
             sendApiRequestAction(new ApiRequest
             {
-                R/*equest*/ = ApiRequestType.SendVoiceCommand,
+                R/*equest*/ = ApiRequestType.SendPhrase,
                 P/*arameter*/ = "Hello"
             });
             

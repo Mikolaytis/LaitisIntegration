@@ -13,11 +13,11 @@ namespace Laitis.ExternalExtensionExample
         /// <summary>
         /// Send Hello string like it was said by a human into microphone
         /// </summary>
-        public static void SendHelloVoiceCommand()
+        public static void SendHelloPhrase()
         {
             new LaitisCommunicator().SendRequest(new ApiRequest
             {
-                R/*equest*/ = ApiRequestType.SendVoiceCommand,
+                R/*equest*/ = ApiRequestType.SendPhrase,
                 P/*arameter*/ = "Hello"
             });
         }

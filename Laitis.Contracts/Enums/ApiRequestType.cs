@@ -6,10 +6,10 @@
     public enum ApiRequestType
     {
         /// <summary>
-        /// Send voice command to Laitis like it was sayed by a human into microphone
+        /// Send phrase to Laitis like it was sayed by a human into microphone
         /// It can activate VoiceCommand, or any functional in laitis
         /// </summary>
-        SendVoiceCommand = 0,
+        SendPhrase = 0,
 
         /// <summary>
         /// Send Actions to Laitis to perform them by Laitis.

@@ -71,5 +71,25 @@
         /// Random
         /// </summary>
         Rand = 12,
+        
+        /// <summary>
+        /// String replace
+        /// </summary>
+        Replace = 13,
+        
+        /// <summary>
+        /// Replace word in string
+        /// </summary>
+        WordReplace = 14,
+
+        /// <summary>
+        /// Regular expression replace
+        /// </summary>
+        RegExReplace = 15,
+
+        /// <summary>
+        /// Regular expression matches
+        /// </summary>
+        RegExMatch = 16
     }
 }

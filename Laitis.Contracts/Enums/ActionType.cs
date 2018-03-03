@@ -28,6 +28,9 @@ namespace Laitis.Contracts.Enums
         /// 
         /// Parameters:
         /// 1. (string) Process Name
+        /// 1. (CloseAppBehaviour enum) Close/Kill
+        /// 
+        /// <seealso cref="CloseAppBehaviour"/>
         /// </summary>
         CloseApp = 1,
 
@@ -68,7 +71,7 @@ namespace Laitis.Contracts.Enums
         /// Parameters:
         /// 1. (string) String to type
         /// </summary>
-        Type = 5,
+        TypeText = 5,
 
         /// <summary>
         /// Play audio sound.
@@ -195,7 +198,7 @@ namespace Laitis.Contracts.Enums
         /// <seealso cref="ShowWindowCommandType"/>
         /// </summary>
         ShowWindow = 18,
-
+        
         /// <summary>
         /// Focus element on an active webpage of active browser
         /// 
@@ -213,12 +216,14 @@ namespace Laitis.Contracts.Enums
         WebPageClick = 20,
 
         /// <summary>
-        /// Pronounce text on element on an active webpage of active browser
+        /// Get inner text of element on an active webpage of active browser
+        /// Set value to the variable
         /// 
         /// Parameters:
         /// 1. (string) CSS selector
+        /// 2. (string) Variable Name
         /// </summary>
-        WebPageRead = 21,
+        WebPageGetText = 21,
 
         /// <summary>
         /// Begin webpage element navigation(selection) on element on an active webpage of active browser
@@ -328,7 +333,7 @@ namespace Laitis.Contracts.Enums
         /// 1. (string) Predefined digits (can be empty)
         /// </summary>
         JetAim = 33,
-
+        
         /// <summary>
         /// Run .bat script
         /// 
@@ -336,16 +341,13 @@ namespace Laitis.Contracts.Enums
         /// 1. (string) Script
         /// </summary>
         BatchScript = 34,
-
+        
         /// <summary>
-        /// Replace variable value if it's value equals to specific value
+        /// Stops current loop
         /// 
-        /// Parameters:
-        /// 1. (string) Variable name
-        /// 2. (string) from
-        /// 3. (string) to
+        /// No Parameters
         /// </summary>
-        VariableReplace = 35,
+        Break = 35,
 
         /// <summary>
         /// Wait for next voice command and write it's value into variable
@@ -388,5 +390,17 @@ namespace Laitis.Contracts.Enums
         /// 1. (string) Voice Command
         /// </summary>
         VoiceCommand = 39,
+        
+        /// <summary>
+        /// Get inner text of element on a webpage by url and set variable value
+        /// Website will not be opened
+        /// Webpage will just download silently and selected specifit text value with selector
+        /// 
+        /// Parameters:
+        /// 1. (string) Url
+        /// 2. (string) CSS selector
+        /// 3. (string) Variable Name
+        /// </summary>
+        GetUrlSelectorText = 40,
     }
 }
