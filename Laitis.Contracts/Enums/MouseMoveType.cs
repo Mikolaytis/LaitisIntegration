@@ -1,7 +1,7 @@
 ﻿namespace Laitis.Contracts.Enums
 {
     /// <summary>
-    /// Mouse move type for Mouse Move Action
+    /// Mouse move kind for Mouse Move Action
     /// <seealso cref="ActionType.MouseMove"/>
     /// </summary>
     public enum MouseMoveType
@@ -14,6 +14,11 @@
         /// <summary>
         /// Move mouse relatively current position
         /// </summary>
-        Relative = 1
+        Relative = 1,
+
+        /// <summary>
+        /// Move mouse gradually over some relative points
+        /// </summary>
+        Scribble = 2
     }
 }

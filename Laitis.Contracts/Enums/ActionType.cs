@@ -44,14 +44,15 @@ namespace Laitis.Contracts.Enums
         /// <seealso cref="ButtonAction"/>
         /// </summary>
         Hotkeys = 2,
-
+        
         /// <summary>
         /// Move mouse cursor.
         /// 
         /// Parameters:
         /// 1. (int) X
         /// 2. (int) Y
-        /// 3. (MouseMoveType enum) Mouse Move Type (point/relative)
+        /// 3. (MouseMoveType enum) Mouse Move Type (point/relative/Scribble)
+        /// 4. (string) - array of points that contains relative coords for Scribble mouse move type. Example: "1,-5,2,5,3,-5..."
         /// 
         /// <seealso cref="MouseMoveType"/>
         /// </summary>
