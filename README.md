@@ -6,6 +6,5 @@
 
 ### Repo contains: 
 
-* Examples of Laitis extensions. 
 * Contacts, that are needed to communicate with Laitis
 * <a href="https://github.com/Mikolaytis/LaitisIntegration/wiki">Conditions, Articles, Documentation</a>
