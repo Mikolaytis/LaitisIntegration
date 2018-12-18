@@ -34,8 +34,8 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enums\ApiRequestType.cs" />
     <Compile Include="ApiRequest.cs" />
+    <Compile Include="Enums\ApiRequestType.cs" />
     <Compile Include="CommandAction.cs" />
     <Compile Include="Enums\ActionType.cs" />
     <Compile Include="Enums\ArithmeticOperation.cs" />
