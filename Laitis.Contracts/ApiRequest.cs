@@ -12,10 +12,9 @@ namespace Laitis.Contracts
         /// Other depends on that property
         /// <seealso cref="ApiRequestType"/>
         /// </summary>
-        public ApiRequestType R { get; set; }
+        public ApiRequestType T { get; set; }
 
         /// <summary>
-        /// Actions
         /// Array of command actions for ApiRequestType.SendActions
         /// Leave it null for other api request types
         /// <seealso cref="CommandAction"/>
@@ -23,9 +22,8 @@ namespace Laitis.Contracts
         public CommandAction[] A { get; set; }
 
         /// <summary>
-        /// string parameter for ApiRequestType.SendPhrase
-        /// Leave it null for other api request types
+        /// string parameter for requests
         /// </summary>
-        public string P { get; set; }
+        public string V { get; set; }
     }
 }
