@@ -6,6 +6,5 @@
 
 ### Репозиторий содержит: 
 
-* Примеры расширений для Laitis. 
 * Контракты, необходимые расширениям для общения с Laitis
 * <a href="https://github.com/Mikolaytis/LaitisIntegration/wiki">Условия, статьи, документацию</a>
